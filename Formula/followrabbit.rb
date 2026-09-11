@@ -5,21 +5,21 @@
 class Followrabbit < Formula
   desc "CLI for Rabbit cloud cost optimization"
   homepage "https://followrabbit.ai"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.2.0/followrabbit_0.2.0_darwin_amd64.tar.gz"
-      sha256 "c8c64f4caaad56c0656db5831abb726b06327798526fb8d968fad332f63742fd"
+      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.3.0/followrabbit_0.3.0_darwin_amd64.tar.gz"
+      sha256 "f23ef91dc97ccc34c8d9cab4141efa28fe1c00dc26104ab90e9618e15f847f63"
 
       define_method(:install) do
         bin.install "followrabbit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.2.0/followrabbit_0.2.0_darwin_arm64.tar.gz"
-      sha256 "a9175cea575fafd7633fd5e28006372cc32f551332712a4dfd29bd2cdd38d2c2"
+      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.3.0/followrabbit_0.3.0_darwin_arm64.tar.gz"
+      sha256 "9daea23a1f2087392a368cf695c363c85d658fe82b210e3d9035d1aaf418b937"
 
       define_method(:install) do
         bin.install "followrabbit"
@@ -29,15 +29,15 @@ class Followrabbit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.2.0/followrabbit_0.2.0_linux_amd64.tar.gz"
-      sha256 "641975f867166220e15280f154c7f414d9e198a6f8c9198687195f188a79e88d"
+      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.3.0/followrabbit_0.3.0_linux_amd64.tar.gz"
+      sha256 "efc73b6601ef932891a0a39b79caa7e1fc1ac198e16b69041ab845eb0fcebf73"
       define_method(:install) do
         bin.install "followrabbit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.2.0/followrabbit_0.2.0_linux_arm64.tar.gz"
-      sha256 "f5ccda483f06b4df9e1a61f2c485304ef8c1ca8abc0b3022ab4005e99d1f9ac3"
+      url "https://github.com/followrabbit-ai/homebrew-tap/releases/download/v0.3.0/followrabbit_0.3.0_linux_arm64.tar.gz"
+      sha256 "7a33539e86c6f615a4448f53e4d3d9a7fd25c05a0b8e27406d1687abce9ae668"
       define_method(:install) do
         bin.install "followrabbit"
       end
